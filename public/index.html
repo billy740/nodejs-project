@@ -3,14 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Welcome to Billy's Tyre Shop</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: white;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-image: url('https://source.unsplash.com/1600x900/?tires,car');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid #007bff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: black;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        /* Navigation Styles */
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        main h2 {
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Tyre Section Styles */
+        .tyres {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tyre-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .tyre-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tyre-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tyre-card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .tyre-card p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .tyre-card .price {
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Our Website!</h1>
-    <p>This is the landing page.</p>
+    <header>
+        <h1>Welcome to Billy's Tyre Shop</h1>
+        <p>Your one-stop destination for high-quality tires!</p>
+    </header>
+
     <nav>
-        <a href="/about">About Us</a> |
+        <a href="/about">About Us</a>
         <a href="/contact">Contact Us</a>
     </nav>
+
+    <main>
+        <h2>Shop With Us</h2>
+        <p>
+            Find the best tires for your vehicle at unbeatable prices. Explore our collection today and drive with confidence.
+        </p>
+
+        <!-- Tyres Section -->
+<h2>Our Tyres Collection</h2>
+<div class="tyres">
+    <!-- Tyre 1 -->
+    <div class="tyre-card">
+        <img src="../images/all season.jpeg" alt="All-Season Tire">
+        <div class="details">
+            <h3>All-Season Tire</h3>
+            <p>Perfect for all weather conditions. Durable and reliable.</p>
+            <p class="price">5500ksh</p>
+        </div>
+    </div>
+
+    <!-- Tyre 2 -->
+    <div class="tyre-card">
+        <img src="../images/winter.jpeg" alt="Winter Tire">
+        <div class="details">
+            <h3>Winter Tire</h3>
+            <p>Designed for snow and icy roads. Maximum grip guaranteed.</p>
+            <p class="price">6000ksh</p>
+        </div>
+    </div>
+
+    <!-- Tyre 3 -->
+    <div class="tyre-card">
+        <img src="../images/truck.jpeg" alt="Truck Tire">
+        <div class="details">
+            <h3>Truck Tire</h3>
+            <p>Heavy-duty tires built for performance and durability.</p>
+            <p class="price">7000ksh</p>
+        </div>
+    </div>
+
+    <!-- Tyre 4 -->
+    <div class="tyre-card">
+        <img src="../images/performance.JPEG" alt="Performance Tire">
+        <div class="details">
+            <h3>Performance Tire</h3>
+            <p>High-speed stability and precision handling for sports cars.</p>
+            <p class="price">7500ksh</p>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Billy's Tyre Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>
